@@ -1,5 +1,4 @@
-name: Basic Workflow on Self-Hosted Runner
-
+name: Workflow on Self-Hosted Runner
 on:
   workflow_dispatch:
 
