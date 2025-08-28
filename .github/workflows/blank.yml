@@ -1,4 +1,5 @@
-name: Workflow on Self-Hosted Runner
+name: Basic Workflow on Self-Hosted Runner
+
 on:
   workflow_dispatch:
 
@@ -8,13 +9,13 @@ jobs:
 
     steps:
     - name: Print Hello
-      shell: pwsh
+      shell: powershell
       run: echo "Hello from self-hosted runner!"
 
     - name: List files
-      shell: pwsh
+      shell: powershell
       run: Get-ChildItem -Force
 
     - name: Show current directory
-      shell: pwsh
+      shell: powershell
       run: Get-Location
